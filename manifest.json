@@ -1,0 +1,21 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+   },
+   "content_scripts": [ {
+      "js": [ "jquery-3.3.1.min.js", "insert.js" ],
+      "matches": [ "https://ideal.bunq.com/*", "https://bunq.me/*" ]
+   } ],
+   "description": "bunq",
+   "key": "GOOGLE KEY HEEERRREEE_--------<<",
+   "manifest_version": 2,
+   "name": "bunq",
+   "permissions": [ "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.1"
+}
